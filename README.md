@@ -2,7 +2,7 @@
 sort: 1
 ---
 
-# PERIPHERALS
+# MCU Peripherals
 
 {% include list.liquid all=true %}
 
