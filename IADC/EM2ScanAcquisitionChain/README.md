@@ -2,24 +2,27 @@
 sort: 1
 ---
 
-# Capsense Touch #
+# EM2 IADC Scan Acquisition #
 
 ## Summary ##
-{% include list.liquid all=true %}
 
-**Written on February 8th 2023**
-**using SDK v4.2.1**
+{% include list.liquid all=true %}
 
 ## Description ##
 
-This guide helps setting up a capsense touch using ACMP and LESENSE peripherals.
+This guide will copver the basics for enabling and using Silicon Labs MCUs Series 2 IADC.
+
+It will cover :
+
+* Series 2 IADC Scan feature usage
+* Deep Sleep (EM2) support with LDMA transfers
+* Low Power Optimizations 
 
 ## Need Help ? ##
 
 The place to request for help on Gecko Platform issues are :
 
 * [**Silicon Labs Community**](https://community.silabs.com/)
-
 
 ## Disclaimer ##
 

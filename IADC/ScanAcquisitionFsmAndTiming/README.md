@@ -2,24 +2,21 @@
 sort: 1
 ---
 
-# Capsense Touch #
+# IADC Scan FSM and associated timings #
 
 ## Summary ##
-{% include list.liquid all=true %}
 
-**Written on February 8th 2023**
-**using SDK v4.2.1**
+{% include list.liquid all=true %}
 
 ## Description ##
 
-This guide helps setting up a capsense touch using ACMP and LESENSE peripherals.
+TODO
 
 ## Need Help ? ##
 
 The place to request for help on Gecko Platform issues are :
 
 * [**Silicon Labs Community**](https://community.silabs.com/)
-
 
 ## Disclaimer ##
 
