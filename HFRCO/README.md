@@ -2,13 +2,13 @@
 sort: 1
 ---
 
-# IADC
+# HFRCO
 
 {% include list.liquid all=true %}
 
 ## Documentation
 
-This folder holds side guides and tutorials related to IADC peripheral
+This folder holds side guides and tutorials related to the HFRCO peripheral
 
 ## Disclaimer
 

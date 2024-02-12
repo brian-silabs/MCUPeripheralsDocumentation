@@ -1,10 +1,10 @@
 ---
-sort: 2
+sort: 3
 ---
 
-# Base Project Implementation #
+# Base Project Implementation
 
-## Project Architecture ##
+## Project Architecture
 
 The goal of this project is to perform periodic channels scans while operating in EM2 at the lowest possible power consumption
 
@@ -28,13 +28,13 @@ This guide aims at getting the best balance between consumption and sample timin
 
     This will improve IADC clock accuracy to ±3% over the whole temperature range and product life
 
-## Project Code ##
+## Project Code
 
 The code will consist in configuring the 4 hardware blocks we included the drivers earlier
 
 Each will at least impose an init function, and LDMA will involve an ISR Handler to be defined
 
-### LETIMER Code ###
+### LETIMER Code
 
 If the project was properly configured, the LETIMER should be clocked using LFXO as below (see RM Figure 8.3 ):
 
@@ -396,7 +396,7 @@ When a single ended connection is being used, the positive input is avaliable on
 
 Since we will be using 8 GPIOs either ODD or even, from both Port A and Port B, we need to tell the GPIO block that the IADC will be the owner of these ABUS ports
 
-### LDMA Code ###
+### LDMA Code
 
 The last functionnal block to be initialized is the LDMA. It will allow us to transfer our bursts of 8 samples to a total amount of 128 (16 times) and evenmtually trigger an ISR for our application to retrieve and use the data.
 
@@ -471,7 +471,7 @@ void LDMA_IRQHandler(void)
 }
 ```
 
-### PRS Code ###
+### PRS Code
 
 The last piece of software required is the PRS initialization code. This will allow us to chain all the blocks together.
 
@@ -553,7 +553,7 @@ The above code connects the LETIMER Channel 0 to the IADC scan trigger event. Th
 
 PRS can also be used to debug the IADC FSM, hence coditianl code present in the function. However these will not be used in this guide
 
-### APP Init Code ###
+### APP Init Code
 
 To enable the whole chain, we implemetned the following to be called in `app_init()`:
 
@@ -589,7 +589,7 @@ And with single global variable being :
 static bool startedSampling = false;
 ```
 
-### APP Process Code ###
+### APP Process Code
 
 Last but not the least, we need low power support. To achieve this, we willm call `EMU_EnterEM2(true)` with clock restoration in `app_process_action()` :
 

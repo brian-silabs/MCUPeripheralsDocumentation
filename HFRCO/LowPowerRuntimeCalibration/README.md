@@ -2,7 +2,7 @@
 sort: 1
 ---
 
-# EM2 IADC Scan Acquisition
+# HFRCO Low Power Runtime calibration
 
 ## Summary
 
@@ -10,13 +10,9 @@ sort: 1
 
 ## Description
 
-This guide will cover the basics for enabling and using Silicon Labs MCUs Series 2 IADC.
+This guide will detail how to perform the HFRCO frequency calibration against a higher frequency source.
 
-It will cover :
-
-* Series 2 IADC Scan feature usage
-* Deep Sleep (EM2) support with LDMA transfers
-* Low Power Optimizations 
+The goal is to have this procedure performed at the lowest possible power
 
 ## Need Help ?
 
